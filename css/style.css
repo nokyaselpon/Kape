@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-clr: #13131a;
+    --second-clr: brown;
+}
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color:#fff;
+    overflow-x: hidden;
+    background: var(--main-clr);
+  
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    border-radius: 50%;
+    height: 100px;
+    padding: .5rem 0;
+    margin-top: 1rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0 1.5rem;
+}
+
+/* HEADER SECTION */
+
+.header{
+    background: var(--main-clr);
+    border-bottom: 1px solid #555;
+}
+
+.navbar{
+    position: relative;
+    height: 120px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    margin-top: 1.2rem;
+}
+.navbar ul li{
+    display: inline-block;
+}
+
+.nav-links a{
+    margin: 0 1rem;
+}
+
+.nav-links a:hover{
+    border-bottom: 1px solid bisque;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.hamburger{
+    color: #fff;
+    display: none;
+}
+
+.nav-search-cart{
+    color: #fff;
+    word-spacing: 10px;
+    cursor: pointer;
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
+}
+
+/* HEADER-END */
+
+/* SHOWCASE */
+.showcase{
+    padding-top: 2rem;
+    background: url('/Practice4/images/kape.jpeg')no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+}
+
+.showcase::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top:0;
+    left: 0;
+}
+
+.showcase-text{
+    padding-top: 6.5rem;
+    position: relative;
+    line-height: 1.8;
+}
+
+.showcase-text h1{
+    font-size: 3rem;
+    max-width:600px;
+}
+
+.showcase-text p{
+    max-width: 600px;
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.showcase-text .btn-order{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+}
+
+.showcase-text .btn-order:hover{
+    background: bisque;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* SHOWCASE-END */
+
+
+
+/* PRODUCT-AREA */
+
+.product{
+    padding-top: 100px;
+}
+
+.product .product-text{
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.product .product-text .bar{
+    margin-top: 1rem;
+    display: block;
+    height: 1px;
+    background-color: bisque;
+    width: 100%;
+}
+
+.product .product-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.product .product-items img{
+   height: 200px;
+   width: 200px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0px 0px 7px bisque;
+   transition: transform 500ms ease-in-out;
+}
+
+.product .product-items img:hover{
+    transform: translateY(-15px);
+}
+
+.product .product-items .product-list a:hover{
+    text-decoration: underline;
+}
+
+.product .product-items .product-list i{
+    color: var(--second-clr);
+}
+
+
+
+/* PRODUCT-AREA-END*/
+
+
+
+
+
+/* MEDIA TABLET*/
+@media (max-width:900px){
+    .product .product-items{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width:800px) {
+
+    .navbar{
+        padding: 0 1.5rem;
+    }
+
+    .navbar .navmenu{
+        position: absolute;
+        right: -120%; top: 102px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--main-clr);
+        opacity: .98;
+        border-radius: 10px;
+        height: 400px;
+        width: 350px;
+        z-index: 100;
+    }
+
+    .navbar .navmenu a:hover{
+        font-weight: normal;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .navbar .navmenu a{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+
+
+
+
+    .nav-links .hamburger{
+        position: absolute;
+        display: block;
+        font-size: 1.8rem;
+        top: 48px;
+        right: 100px;
+        cursor: pointer;
+    }
+
+    .navbar .navmenu.active{
+        right: 0;
+    }
+
+    .showcase{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .showcase-text h1{
+        max-width: 100%;
+    }
+
+    .showcase-text p{
+        max-width: 100%;
+}
+
+.product .product-items img{
+    width: 170px;
+}
+
+}
+
+@media (max-width:610px) {
+    .product .product-items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+/* PHONE */
+
+@media (max-width:500px){
+
+    .showcase-text h1{
+        font-size: 2.5rem;
+    }
+
+    .product .product-items img{
+        width: 140px;
+        height: 150px;
+    }
+}
