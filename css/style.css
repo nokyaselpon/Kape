@@ -93,7 +93,7 @@ a{
 /* SHOWCASE */
 .showcase{
     padding-top: 2rem;
-    background: url(/Practice4/images/kape.jpeg)no-repeat;
+    background: url('https://github.com/nokyaselpon/Kape/raw/main/images/kape.jpeg')no-repeat;
     background-position: center center;
     background-size: cover;
     min-height: 600px;
