@@ -535,7 +535,7 @@ a{
 }
 
 .about-showcase{
-    background: url('/Practice4/images/about.jpeg');
+    background: url('https://github.com/nokyaselpon/Kape/raw/main/images/about.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
