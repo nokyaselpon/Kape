@@ -93,7 +93,7 @@ a{
 /* SHOWCASE */
 .showcase{
     padding-top: 2rem;
-    background: url('https://github.com/nokyaselpon/Kape/raw/main/images/kape.jpeg')no-repeat;
+    background: url(/Practice4/images/kape.jpeg)no-repeat;
     background-position: center center;
     background-size: cover;
     min-height: 600px;
@@ -430,7 +430,7 @@ a{
      }
 
      .contact-grid .contact-cards form textarea{
-        padding: 1rem 0;
+        padding: 1rem 0.5rem;
         margin: 1rem 0;
         font-size: 1rem;
         width: 80%;
@@ -445,10 +445,29 @@ a{
 
 /* CONTACT-END */
 
+/* FOOTER */
+     .footer{
+        margin-top: 100px;
+        min-height: 100px;
+        background:var(--main-clr);
+        text-align: center;
+        border-top: 1px solid #555;
+     }
 
+     .footer .footer-icons{
+        padding-top: 2rem;
+     }
 
+     .footer .footer-icons i{
+        padding: 0 1rem;
+     }
 
-
+     .footer .footer-links{
+        margin: 1rem 0;
+        font-size: 1.2rem;
+     }
+     
+/* FOOTER-END */
 
 /* MEDIA TABLET*/
 @media (max-width:900px){
@@ -466,6 +485,10 @@ a{
         display: flex;
         flex-direction: column;
         max-width: 500px;
+    }
+
+    .contact-grid > :nth-child(3){
+        grid-column-start: 1;
     }
     
 }
@@ -535,7 +558,7 @@ a{
 }
 
 .about-showcase{
-    background: url('https://github.com/nokyaselpon/Kape/raw/main/images/about.jpeg');
+    background: url('/Practice4/images/about.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -606,16 +629,11 @@ text-align: center;
     }
 }
 
-.contact-grid{
-    gap: 0;
-    padding: 0;
-}
-
 .contact-grid .contact-cards form{
     width: 100%;
     text-align: center;
-   
 }
+
 
 .contact-grid .contact-cards form input,
 .contact-grid .contact-cards form textarea{
