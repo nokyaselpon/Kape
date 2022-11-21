@@ -1,249 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Kape ka muna!</title>
 </head>
+
 <body>
     <!-- HEADER -->
     <header class="header">
-            <div class="container navbar">
+        <div class="container navbar">
             <a href="index.html">
                 <img src="./images/logo.png" class="logo">
             </a>
 
             <div class="nav-links">
-            <ul class="navmenu" id="navmenu">
-                <a href="index.html"><li>Home</li></a>
-                <a href="#product"><li>Products</li></a>
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Contact</li></a>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <div class="fas fa-bars" id="hamburger"></div>
+                <ul class="navmenu" id="navmenu">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#product">
+                        <li>Products</li>
+                    </a>
+                    <a href="#about">
+                        <li>About</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <div class="fas fa-bars" id="hamburger"></div>
                 </div>
-        </div>
-            
+            </div>
+
             <div class="nav-search-cart">
                 <div class="fas fa-search" id="btn-search"></div>
                 <div class="fas fa-shopping-cart" id="btn-cart"></div>
             </div>
+
         </div>
     </header>
     <!-- HEADER-END -->
 
     <!-- SHOWCASE -->
-            <div class="showcase">
-                <div class="container showcase-text">
-                    <h1>KAPE KAPE LANG PAG MAY TIME</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo alias voluptatibus illum, molestias soluta expedita velit veritatis commodi totam reprehenderit?</p>
-                    <a href="#product" class="btn-order">Order now</a>
-                </div>
-            </div>
-        
+    <div class="showcase">
+        <div class="container showcase-text">
+            <h1>KAPE KAPE LANG PAG MAY TIME</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo alias voluptatibus illum, molestias soluta
+                expedita velit veritatis commodi totam reprehenderit?</p>
+            <a href="#product" class="btn-order">Order now</a>
+        </div>
+        <div class="search-bar" id="search-bar">
+            <label for="search-bar">Search</label><input type="search" placeholder="..." id="input-search">
+        </div>
+    </div>
+
     <!-- SHOWCASE-END -->
 
     <!-- PRODUCT-AREA -->
-            <div class="container product" id="product">
-                <div class="product-text">
-                    <h1>Featured Products</h1>
-                    <span class="bar"></span>
-                </div>
+    <div class="container product" id="product">
+        <div class="product-text">
+            <h1>Featured Products</h1>
+            <span class="bar"></span>
+        </div>
 
-                <div class="product-items">
-                    <div class="product-list">
-                    <img src="./images/prod1.png">
-                    <br>
-                    <i class="fas fa-star-half-stroke"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <a href="#">
+        <div class="product-items">
+            <div class="product-list">
+                <img src="./images/prod1.png">
+                <br>
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
                     <h3>Coffee 1</h3>
                     <p>$25.99</p>
                 </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod2.png">
-                    <br>
-                   
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 2</h3>
-                        <p>$25.99</p>
-                    </a>
-                </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod3.png">
-                    <br>
-                    
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 3</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod4.png">
-                    <br>
-                  
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 4</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod5.png">
-                    <br>
-                   
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 5</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod6.png">
-                    <br>
-                    
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 6</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod7.png">
-                    <br>
-                    
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 7</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod8.png">
-                    <br>
-        
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 8</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod9.png">
-                    <br>
-                    
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 9</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod10.png">
-                    <br>
-                    
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 10</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod11.png">
-                    <br>
-                    
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 11</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-                <div class="product-list">
-                    <img src="./images/prod12.png">
-                    <br>
-                    
-                        <i class="fas fa-star-half-stroke"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <a href="#">
-                        <h3>Coffee 12</h3>
-                        <p>$25.99</p>
-                    </a>
-                </div>
-
-
-                </div>
             </div>
+
+            <div class="product-list">
+                <img src="./images/prod2.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 2</h3>
+                    <p>$25.99</p>
+                </a>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod3.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 3</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod4.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 4</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod5.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 5</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod6.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 6</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod7.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 7</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod8.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 8</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod9.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 9</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod10.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 10</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod11.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 11</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <img src="./images/prod12.png">
+                <br>
+
+                <i class="fas fa-star-half-stroke"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <a href="#">
+                    <h3>Coffee 12</h3>
+                    <p>$25.99</p>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
     <!-- PRODUCT-AREA-END -->
+
+    <!-- TESTIMONIAL -->
+    <div class="container testimonial">
+        <div class="testimonial-text">
+            <h1>Product Reviews</h1>
+            <span class="bar"></span>
+        </div>
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+                <img src="./images/testimonial1.png">
+                <h4>Jonhson B.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa unde magnam ullam ducimus
+                    architecto quo, officiis optio voluptas aperiam!</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./images/testimonial2.png">
+                <h4>Roger A.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa unde magnam ullam ducimus
+                    architecto quo, officiis optio voluptas aperiam!</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="./images/testimonial3.png">
+                <h4>Cecilion P.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa unde magnam ullam ducimus
+                    architecto quo, officiis optio voluptas aperiam!</p>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- TESTIMONIAL-END -->
+
 
     <!-- ABOUT-SECTION -->
 
+    <div class="container about" id="about">
+
+        <div class="about-text">
+            <h1>About Us</h1>
+            <span class="bar"></span>
+        </div>
+
+        <div class="about-showcase">
+            <div class="about-image">
+                <img src="./images/about.jpeg">
+            </div>
+
+            <div class="about-history">
+                <h2>Kape Kape History</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe expedita aspernatur eaque voluptate corporis, nobis id aliquid accusamus veniam odit consectetur doloribus maxime, non earum modi deserunt nulla esse. Debitis recusandae quo dolorem numquam tempore! Velit sint deserunt iusto veniam a unde. Possimus aspernatur rerum corrupti vitae a harum laboriosam.
+                    <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt, corrupti veniam laudantium velit temporibus quos distinctio aperiam odit vitae quae ut omnis dicta! Dicta cumque eum repellat laborum suscipit quia eius vitae minus doloremque rerum accusantium cupiditate officia nisi aperiam possimus quo pariatur odio eos, culpa debitis enim nulla!<a href="#" class="readmore"> Read More <i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+    </div>
+
     <!-- ABOUT-SECTION-END -->
+
+    <!-- CONTACT -->
+        <div class="container contact" id="contact">
+            <div class="contact-text">
+                <h1>Contact Us</h1>
+                <span class="bar"></span>
+            </div>
+            
+            
+            <div class="contact-grid">
+                <div class="contact-cards">
+                    <i class="fa fa-envelope fa-3x"></i>
+                    <a href="#"><p>email@emailme.com</p></a>
+                    <h2>Email</h2>
+                </div>
+            
+                <div class="contact-cards">
+                    <i class="fa fa-phone fa-3x"></i>
+                    <p>+63975227212</p>
+                    <h2>Phone Number</h2>
+                </div>
+               
+                <div class="contact-cards">
+                    <form>
+                        <h2>Contact Us</h2>
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Valid Email" required>
+                        <textarea name="textarea" class="t-area" cols="30" rows="10"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    <!-- CONTACT-END -->
 
     <script src="script.js"></script>
 </body>
+
 </html>
